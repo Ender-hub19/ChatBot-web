@@ -314,8 +314,9 @@ class ChatUI {
 }
 
 // Inicializar la aplicación cuando el DOM esté listo
+let chatUIInstance;
 document.addEventListener('DOMContentLoaded', () => {
-    new ChatUI();
+  chatUIInstance = new ChatUI();
 });
 
 // Prevenir zoom en iOS al hacer focus en inputs
